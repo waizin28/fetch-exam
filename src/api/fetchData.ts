@@ -82,6 +82,7 @@ export const getLocations = async (zipCodes: string[]): Promise<Location[]> => {
   return response.data;
 };
 
+// Return an array of Location objects and total number of results for the query
 export const searchLocations = async (
   params: LocationSearchParams
 ): Promise<LocationSearchResponse> => {
